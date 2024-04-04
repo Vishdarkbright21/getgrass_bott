@@ -1,8 +1,3 @@
-# -*- coding: utf-8 -*-
-# @Time     :2023/12/26 17:00
-# @Author   :ym
-# @File     :main.py
-# @Software :PyCharm
 import asyncio
 import random
 import ssl
@@ -73,15 +68,15 @@ async def connect_to_wss(socks5_proxy, user_id):
 
 async def main():
     # TODO 修改user_id
-    _user_id = 'user_id'
+    _user_id = '2ebeLiN6eV6Lix08e61cnIMBYSo'
     # TODO 修改代理列表
     socks5_proxy_list = [
-        'socks5://user:pwd@ip:port',
+        'socks5://pgA0iJDYKHbLQ4u:eTVsyKI1ulwZI9k@178.209.68.158:53037',
     ]
     tasks = [asyncio.ensure_future(connect_to_wss(i, _user_id)) for i in socks5_proxy_list]
     await asyncio.gather(*tasks)
 
 
-if __name__ == '__main__':
+if name == 'main':
     # # 运行主函数
     asyncio.run(main())
