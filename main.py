@@ -77,6 +77,6 @@ async def main():
     await asyncio.gather(*tasks)
 
 
-if name == 'main':
+if __name__ == 'main':
     # # 运行主函数
     asyncio.run(main())
